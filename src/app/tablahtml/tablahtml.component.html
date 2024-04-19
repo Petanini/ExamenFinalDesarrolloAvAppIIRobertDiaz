@@ -1,0 +1,31 @@
+<body class="sub_page">
+    <div class="hero_area">
+        <app-navbar></app-navbar>
+    </div>
+</body>
+<div class="container">
+    <h1>Consumiendo el API</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>RUC</th>
+                <th>Razón Social</th>
+                <th>Rubro</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(item of listarAsociados; track item; let index = $index){
+            <tr>
+                <td>{{ item.idsocio }}</td>
+                <td>{{ item.rucsocio }}</td>
+                <td>{{ item.razonsocial }}</td>
+                <td>{{ item.rubro }}</td>
+                <td>{{ item.estado }}</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<app-footer></app-footer>

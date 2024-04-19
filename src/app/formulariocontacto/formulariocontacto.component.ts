@@ -30,7 +30,7 @@ export class FormulariocontactoComponent {
     this.nombre = this.formulario.nombre;
     this.telefono = this.formulario.telefono;
     this.correo = this.formulario.correo;
-    this.personas = this.formulario.personas;
+    this.personas = "2";
     this.fecha = this.formulario.fecha;
     console.log(this.formulario);
     this.showModal = true;
